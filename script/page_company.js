@@ -2,7 +2,7 @@ var art_company = document.getElementById('company');
 
 axios.get("http://localhost:8443/candidat/all_company")
 .then(function(result) {
-  createCardsCompany(result.data); // MET A JOUR LA VUE AVEC LES DIFFERENTES CARTES
+  createCardsCompany(result.data); 
 })
 .catch(function(error) {
   console.log("erreur : ", error)
